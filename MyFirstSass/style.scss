@@ -1,0 +1,16 @@
+/* file import */
+
+/*https://www.freecodecamp.org/news/how-to-use-sass-with-css/*/
+/*https://github.com/AdalbertPungu/card_with_sass*/
+
+@import 'variables';
+@import 'mixins';
+@import 'card';
+
+body {
+    font-family: $fonts; /* variable usage */
+    background-color: $primary-color;
+    padding: $spacing;
+    min-height: 100vh;
+    @include flex-center(); /* using the mixins function */
+}
