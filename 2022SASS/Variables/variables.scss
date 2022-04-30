@@ -1,0 +1,14 @@
+/* define variables for the primary colors */
+$primary_1: #a2b9bc;
+
+.main-header{
+    $primary_1: #04d7f3 !global; //sass global variable
+    color: $primary_1; 
+    text-align: center;
+}
+
+h2{
+    color: $primary_1; //color won't be #a2b9bc
+    text-align: center;
+}
+

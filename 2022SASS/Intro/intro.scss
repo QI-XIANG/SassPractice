@@ -1,0 +1,12 @@
+/* define variables for the primary colors */
+$primary_1: #a2b9bc;
+$primary_2: #b2ad7f;
+
+/* use the variables */
+.main-header{
+    color: $primary_1;
+}
+
+.main-menu{
+    color: $primary_2;
+}
