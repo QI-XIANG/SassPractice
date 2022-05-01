@@ -1,0 +1,25 @@
+/* define variables for the primary colors */
+$primary_1: #a2b9bc;
+
+.main-header{
+    color: $primary_1; 
+    text-align: center;
+    /*attribute with same prefix*/
+    font: {
+        family: Helvetica, sans-serif;
+        size: 40px;
+        weight: bold;
+    }
+}
+
+/*sass nesting css selector*/
+
+nav{
+    display: flex;
+    justify-content: center;
+    ul{
+        li{
+            color: $primary_1;
+        }
+    }
+}

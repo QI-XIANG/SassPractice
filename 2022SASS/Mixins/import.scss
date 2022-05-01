@@ -1,0 +1,31 @@
+/*import sass file : _color.scss*/
+/*if you import the partial file, omit the underscore*/
+@import "color";
+@import "reset";
+@import "mixins";
+
+.main-header{
+    color: $primary_1; 
+    text-align: center;
+    @include transform(rotate(3deg));
+    /*attribute with same prefix*/
+    font: {
+        family: Helvetica, sans-serif;
+        size: 40px;
+        weight: bold;
+    }
+    @include border(blacK,2px);
+}
+
+/*sass nesting css selector*/
+
+nav{
+    /*using a mixin*/
+    @include border-li;
+    @include flex;
+    ul{
+        li{
+            @include li-text;
+        }
+    }
+}

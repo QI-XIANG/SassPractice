@@ -1,0 +1,35 @@
+/*import sass file : _color.scss*/
+/*if you import the partial file, omit the underscore*/
+/* define variables for the primary colors */
+/*this file won't be transpiled because its file name starts with underscore _*/
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  color: #a2b9bc;
+  text-align: center;
+  /*attribute with same prefix*/
+  font-family: Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/*sass nesting css selector*/
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav ul li {
+  color: #da6262;
+}
+/*# sourceMappingURL=import.css.map */

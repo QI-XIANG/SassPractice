@@ -1,0 +1,27 @@
+/*import sass file : _color.scss*/
+/*if you import the partial file, omit the underscore*/
+@import "color";
+@import "reset";
+
+.main-header{
+    color: $primary_1; 
+    text-align: center;
+    /*attribute with same prefix*/
+    font: {
+        family: Helvetica, sans-serif;
+        size: 40px;
+        weight: bold;
+    }
+}
+
+/*sass nesting css selector*/
+
+nav{
+    display: flex;
+    justify-content: center;
+    ul{
+        li{
+            color: $primary_2;
+        }
+    }
+}

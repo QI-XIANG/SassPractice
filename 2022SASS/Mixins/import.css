@@ -1,0 +1,51 @@
+/*import sass file : _color.scss*/
+/*if you import the partial file, omit the underscore*/
+/* define variables for the primary colors */
+/*this file won't be transpiled because its file name starts with underscore _*/
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+/*A mixin can also include other mixins*/
+/*Passing Variables to a Mixin*/
+/*Default Values for a Mixin*/
+/*Using a Mixin For Vendor Prefixes*/
+.main-header {
+  color: #a2b9bc;
+  text-align: center;
+  -webkit-transform: rotate(3deg);
+  transform: rotate(3deg);
+  /*attribute with same prefix*/
+  font-family: Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  border: 2px solid blacK;
+}
+
+/*sass nesting css selector*/
+nav {
+  /*using a mixin*/
+  border: 2px dashed #5555e9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul li {
+  text-decoration: none;
+  color: #5c5cdf;
+  font-size: 25px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+}
+/*# sourceMappingURL=import.css.map */

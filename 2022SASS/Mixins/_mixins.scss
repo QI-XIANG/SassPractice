@@ -1,0 +1,38 @@
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*A mixin can also include other mixins*/
+
+@mixin li-text {
+    @include link;
+    font: {
+        size:25px;
+        family:Helvetica, sans-serif;
+        weight:bold;
+    };
+}
+
+@mixin link {
+    text-decoration: none;
+    color: rgb(92, 92, 223);
+}
+
+/*Passing Variables to a Mixin*/
+@mixin border($color,$width){
+    border: $width solid $color;
+}
+
+/*Default Values for a Mixin*/
+@mixin  border-li($color:rgb(85, 85, 233),$width: 2px){
+    border: $width dashed $color;
+}
+
+/*Using a Mixin For Vendor Prefixes*/
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+  }

@@ -1,0 +1,24 @@
+/* define variables for the primary colors */
+.main-header {
+  color: #a2b9bc;
+  text-align: center;
+  /*attribute with same prefix*/
+  font-family: Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/*sass nesting css selector*/
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav ul li {
+  color: #a2b9bc;
+}
+/*# sourceMappingURL=nesting.css.map */
