@@ -1,0 +1,37 @@
+/*Sass @extend and Inheritance*/
+/*
+The @extend directive lets you share a set of CSS properties from one selector to another.
+The @extend directive is useful if you have almost identically styled elements that only differ in some small details.
+*/
+@import "reset";
+
+.button-basic  {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@mixin  flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.button-container{
+    @include flex;
+}
+
+.button-report{
+    @extend .button-basic;
+    background-color: rgb(255, 107, 107);
+}
+
+.button-submit{
+    @extend .button-basic;
+    background-color: rgb(126, 245, 126);
+    color: rgb(207, 174, 174);
+}
+
